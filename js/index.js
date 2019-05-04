@@ -74,3 +74,20 @@ imgsGone.addEventListener('click', (event) => {
     }, 5000);
 
 }, false);
+
+// 8 
+const letsGo = document.querySelectorAll('.text-content h2');
+
+letsGo[0].addEventListener('mouseover', (event) => {
+    const info = document.querySelectorAll('.text-content p');
+    event.target.textContent = "Get off your butt!";
+    info[0].textContent = "Get going and find some adventure! Adventure is where you find it, so start your search and live a life of adventure."
+    info[0].style.color = "red";
+
+    setTimeout(function() {
+        event.target.textContent = "Let's Go!";
+        info[0].textContent = "Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized."
+        info[0].style.color = "";
+    },6000);
+}, false);
+
