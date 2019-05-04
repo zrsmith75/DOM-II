@@ -199,6 +199,16 @@ img {
     font-size: 3rem;
   }
 }
+.main-navigation .nav-container .change-logo {
+  font-size: 5rem;
+  color: darkolivegreen;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container .change-logo {
+    font-size: 3rem;
+    color: darkolivegreen;
+  }
+}
 .main-navigation .nav-container .nav {
   width: 350px;
   display: flex;

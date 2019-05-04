@@ -2,9 +2,10 @@
 // let navWords = document.querySelectorAll('a');
 // navWords.forEach(words => words.style.color = "red");
 
+// 1 Modify nav links color using mouseover
 let navBar = document.querySelector('.nav');
 
-navBar.addEventListener('mouseover', function(event) {
+navBar.addEventListener('mouseover', (event) => {
     event.target.style.color = "red";
 
     setTimeout(function() {
@@ -12,8 +13,25 @@ navBar.addEventListener('mouseover', function(event) {
     },2000);
 }, false);
 
+
+// 2 Change Fun Bus logo using click and toggle
 let funBusLogo = document.querySelector('.logo-heading');
 
-funBusLogo.addEventListener('click', function() {
-    
+funBusLogo.addEventListener('click', () => {
+    funBusLogo.classList.toggle('change-logo');
 });
+
+
+// 3 and 4 Fade out bus image using double click and mouseleave
+let busImg = document.querySelector('.intro img');
+
+busImg.addEventListener('dblclick', (event) => {
+    event.target.style.opacity = 0;
+});
+
+busImg.addEventListener('mouseleave', (event) => {
+    event.target.style.opacity = 1;
+});
+
+// 5
+
