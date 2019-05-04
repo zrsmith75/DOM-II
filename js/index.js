@@ -34,4 +34,8 @@ busImg.addEventListener('mouseleave', (event) => {
 });
 
 // 5
+const footerGone = document.querySelector('.footer');
 
+footerGone.addEventListener('mouseover', (event) => {
+    event.target.style.display = 'none';
+});
