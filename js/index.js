@@ -21,7 +21,6 @@ funBusLogo.addEventListener('click', () => {
     funBusLogo.classList.toggle('change-logo');
 });
 
-
 // 3 and 4 Fade out bus image using double click and mouseleave
 const busImg = document.querySelector('.intro img');
 
@@ -33,9 +32,17 @@ busImg.addEventListener('mouseleave', (event) => {
     event.target.style.opacity = 1;
 });
 
-// 5
-const footerGone = document.querySelector('.footer');
+// 5 and 6
+const footerGone = document.querySelector('.footer p');
+const imgFooterFix = document.querySelector('.content-destination img');
 
 footerGone.addEventListener('mouseover', (event) => {
     event.target.style.display = 'none';
 });
+
+imgFooterFix.addEventListener('mouseover', () => {
+    const footer = document.querySelector('.footer p');
+    footer.style.display = '';
+});
+
+//
