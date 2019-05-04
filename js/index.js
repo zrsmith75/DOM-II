@@ -91,7 +91,7 @@ letsGo[0].addEventListener('mouseover', (event) => {
     },6000);
 }, false);
 
-// 9 use wheel to make everything disappear for 2s
+// 9 use wheel to make everything disappear for 3s
 
 const body = document.querySelector('body');
 
@@ -103,3 +103,7 @@ body.addEventListener('wheel', (event) => {
     }, 3000);
 }, false);
 
+// 10 
+navBar.addEventListener('click', (event) => {
+    alert('Did you just get hacked? Opps ... ');
+});
