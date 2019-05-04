@@ -91,3 +91,15 @@ letsGo[0].addEventListener('mouseover', (event) => {
     },6000);
 }, false);
 
+// 9 use wheel to make everything disappear for 2s
+
+const body = document.querySelector('body');
+
+body.addEventListener('wheel', (event) => {
+    event.target.style.display = 'none';
+
+    setTimeout(function() {
+        event.target.style.display = '';
+    }, 3000);
+}, false);
+
