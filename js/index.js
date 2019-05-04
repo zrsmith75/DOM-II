@@ -103,7 +103,7 @@ body.addEventListener('wheel', (event) => {
     }, 3000);
 }, false);
 
-// 10 
+// 10 use click to alert when clicking on nav
 navBar.addEventListener('click', (event) => {
     alert('Did you just get hacked? Opps ... ');
 });
